@@ -65,7 +65,7 @@ function startGame() {
       mario.style.bottom = '-15px';
     } else if (skin === 'pikachu') {
       mario.src = 'assets/images/pikachu.webp';
-      mario.style.bottom = '0px'
+      mario.style.bottom = '0px';
       clouds.src = 'assets/images/clouds.png';
       gameBoard.style.backgroundImage = 'linear-gradient(#87CEEB, #E0F6FF)';
       if (window.matchMedia("(max-width: 850px)").matches) {
