@@ -153,7 +153,7 @@ function startGame() {
     let coinsLoop = setInterval(() => {
       const coinsSpan = document.querySelector('.coins');
       const currentCoins = parseInt(coinsSpan.textContent);
-      const newCoins = currentCoins + 3333; // Value temporarily set to 3333 for testing purposes, REMOVE LATER
+      const newCoins = currentCoins + 3;
       coinsSpan.textContent = newCoins.toString();
     }, 800);
 
