@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Total Jumper</title>
+    <!-- Link to StyleSheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Link to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <!-- Link to FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <nav>
+        <h1 class="logo"><a href="index.html">TOTALJUMPER</a></h1>
+    </nav>
+
+    <div class="gameitself">
+        <div onclick="jump" class="game-board">
+            <p>SCORE: <span class="score">0</span> <i class="fa-solid fa-star fa-fade" style="color: #0c1d3b;"></i></p>
+            <p>COINS: <span class="coins">0</span> <i class="fa-solid fa-coins fa-fade"></i></p>
+            <p>BEST SCORE: <span class="bestScore">0</span> <i class="fa-solid fa-star" style="color: #0c1d3b;"></i></p>
+            <img src="assets/images/clouds.png" class="clouds">
+            <p class="speedCount">SPEED: <span class="speed">1</span></p>
+            <img class="pipe" src="./assets/images/pipe.png">
+            <img src="assets/images/mario.webp" class="mario">
+            <img src="assets/images/playgame.png" class="playbtn" alt="" onclick="startGame()">
+            <img src="assets/images/gameoverimg.png" class="gameover" alt="">
+            <img src="assets/images/tryagain.png" class="tryagain" onclick="startGame()" alt="">
+            <button class="startButton" style="visibility: hidden;" onclick="startGame()">START GAME</button>
+        </div>
+        <div class="shop">
+            <p class="notEnough">INSUFICIENT COINS, YOU NEED MORE <span class='coinsNeeded'>0</span> COINS</p>
+            <p class="buySkin">FREE <i class="fa-solid fa-coins"></i> - SKIN MARIO - <span
+                    onclick="skinMario()">BUY</span></p>
+            <br>
+            <p class="buySkin">50 <i class="fa-solid fa-coins"></i> - SKIN PIKACHU - <span
+                    onclick="skinPika()">BUY</span></p>
+            <br>
+            <p class="buySkin">80 <i class="fa-solid fa-coins"></i> - SKIN SONIC - <span
+                    onclick="skinSonic()">BUY</span></p>
+            <br>
+            <p class="buySkin">150 <i class="fa-solid fa-coins"></i> - SKIN HOMER - <span
+                    onclick="skinHomer()">BUY</span></p>
+            <br>
+            <p class="buySkin">999 <i class="fa-solid fa-coins"></i> - MISTERY SKIN - <span
+                    onclick="skinMistery()">BUY</span></p>
+        </div>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
