@@ -72,7 +72,6 @@ function startGame() {
       } else {
         mario.style.width = '180px';
       }
-      mario.style.bottom = '0px';
       pipe.src = 'assets/images/pikachupipe.png';
       if (window.matchMedia("(max-width: 850px)").matches) {
         pipe.style.width = '140px';
@@ -304,7 +303,7 @@ function startGame() {
       } else {
         mario.src = 'assets/images/sonicover.png';
       }
-  
+      mario.style.bottom = '0px';
       clouds.src = 'assets/images/clouds.png';
       gameBoard.style.backgroundImage = 'linear-gradient(#87CEEB, #E0F6FF)';
       if (window.matchMedia("(max-width: 850px)").matches) {
@@ -382,7 +381,7 @@ function startGame() {
       } else {
         mario.src = 'assets/images/pikaover.png';
       }
-  
+      mario.style.bottom = '0px';
       clouds.src = 'assets/images/clouds.png';
       gameBoard.style.backgroundImage = 'linear-gradient(#87CEEB, #E0F6FF)';
       if (window.matchMedia("(max-width: 850px)").matches) {
@@ -434,6 +433,7 @@ function startGame() {
         mario.style.width = '150px';
         mario.style.marginBottom = '-10px';
       }
+      mario.style.bottom = '0px';
       coinsSpan.textContent = newCoins.toString();
       skin = 'mistery';
       pipe.src = 'assets/images/misterypipe.png';
