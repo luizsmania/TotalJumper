@@ -139,9 +139,6 @@ function startGame() {
     mario.style.animation = '';
     pipe.style.animation = 'pipe-animation 1.7s infinite linear';
   
-  
-  
-  
     // Score Loop, adds 15 every 500ms in order to count users score accordingly to time playing without losing
     let scoreLoop = setInterval(() => {
       const scoreSpan = document.querySelector('.score');
@@ -149,6 +146,7 @@ function startGame() {
       const newScore = currentScore + 15;
       scoreSpan.textContent = newScore.toString();
     }, 500);
+    
     // Coins Loop, adds 3 coins every 800ms and does not reset in case players loses the game
     let coinsLoop = setInterval(() => {
       const coinsSpan = document.querySelector('.coins');
